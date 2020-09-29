@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Harrison Kratzer</title>
+  <meta name="description" content="">
+  <meta name="Harrison Kratzer" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="index.css">
+      
+        
+
+  <link rel="icon" type="image/png" href="Random/SPADE-FACE.jpeg">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        
+        $( document ).ready(function() {
+             jQuery('#showall').addClass('activelink');
+});
+        
+    jQuery(function(){
+         jQuery('#showall').click(function(){
+               jQuery('.targetDiv').show();
+                         jQuery(this).addClass('activelink');
+                         jQuery('.showSingle').removeClass('activelink');
+            jQuery("html").animate({scrollTop:0},"slow")
+
+
+        });
+        jQuery('.showSingle').click(function(){
+              jQuery('.targetDiv').hide();
+              jQuery('#div'+$(this).attr('target')).show();
+                            jQuery('.showSingle').removeClass('activelink');
+            
+            
+            jQuery(this).addClass('activelink');
+            jQuery("html").animate({scrollTop:0},"slow")
+
+        });
+        
+                jQuery('.zero').click(function(){
+
+                jQuery('#showall').removeClass('activelink')
+});
+});
+            </script>
+    
+   <script>
+        
+       $( document ).ready(function() {
+             jQuery('.info').hide();
+});
+        
+       jQuery('info-button').click(function(){
+
+                jQuery('.info').show();
+});
+        
+    
+
+        
+});
+            </script>
+    
+
+
+    
+</head>
+    
+    
+<body>
+    
+ <div class="half-one"></div>
+    
+        
+    
+    <div class="half-one-split"> <h1>HARRISON KRATZER</h1>
+    
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+    <br>
+    <button class="btn active" onclick="filterSelection('all')" ><a id="showall">INDEX</a></button>
+    
+    <br>
+    
+  <button class="btn zero" onclick="filterSelection('branding')"> BRANDING</button>
+    
+  <button class="btn zero" onclick="filterSelection('editorial')"> EDITORIAL</button>
+    
+      <button class="btn zero" onclick="filterSelection('musician')"> MUSICIAN_WORK</button>
+    
+  <button class="btn zero" onclick="filterSelection('photo')"> PHOTO</button>
+    
+  <button class="btn zero" onclick="filterSelection('typography')"> TYPOGRAPHY</button>
+    
+     <button class="btn zero" onclick="filterSelection('digitali')"> DIGITAL_INTERACTIVE</button>
+    
+      <button class="btn zero" onclick="filterSelection('motion')"> MOTION</button>
+            
+     <button class="btn zero" onclick="filterSelection('packaging')"> PACKAGING</button>
+    
+     <button class="btn zero" onclick="filterSelection('3d')"> 3D</button>
+     
+    <button class="btn zero" onclick="filterSelection('physicali')"> PHYSICAL_INTERACTIVE</button>
+    
+    <br>
+    
+     <button class="btn zero" onclick="filterSelection('2020')"> 2020</button>
+      
+    <button class="btn zero" onclick="filterSelection('2019')"> 2019</button>
+    
+     <br>
+    
+    <a class="btn zero" href="mailto:harrck4@gmail.com"target="_blank">EMAIL</a>
+    
+     <a class="btn zero" href="https://www.instagram.com/harrison.kratzer/"target="_blank">INSTA</a>
+    
+     <a class="btn zero" href="https://www.linkedin.com/in/harrison-kratzer-6b79a2153/"target="_blank">LINKEDIN</a>
+    
+      <a class="btn zero" href="https://workingnotworking.com/75757-harrison"target="_blank">WNW</a>
+    
+      <a class="btn zero" href="https://drive.google.com/file/d/1bmOOLiRL8IvnvLYKAAgjBi8T8oUbNPva/view?usp=sharing"target="_blank">RESUME</a>
+    
+     <p class="footer">Site set in <a href="https://authentic.website/"target="_blank">Authentic Sans</a>.<br>Developed by yours truly, assisted by <a href="http://coleferguson.xyz/"target="_blank">Cole Ferguson</a>.</p>
+    
+      
+    
+</div>
+        
+        
+    
+    </div>
+
+      <div class="half-one-split-two"> 
+          
+          <div id="myBtnContainer"> 
+    
+<br><br><br><br>
+              
+              
+  <div class="container buttons">
+      
+      
+      <div class="filterDiv branding 3d packaging motion 2020"><a  class="showSingle" target="1">4D</a></div>
+      
+      <div class="filterDiv typography 3d motion 2020"><a  class="showSingle" target="2">MONNNO</a></div>
+ 
+      <div class="filterDiv poster musician branding photo 2020"><a  class="showSingle" target="3">BENEDICT</a></div>  
+  
+  <div class="filterDiv musician video 2020"><a  class="showSingle" target="4">PLUCK</a></div> 
+      
+  <div class="filterDiv branding 3d motion 2019"><a  class="showSingle" target="5">MAYA</a></div>
+      
+  <div class="filterDiv branding motion 2019"><a  class="showSingle" target="6">WOLFSTOCK</a></div>
+      
+  <div class="filterDiv editorial 2019"><a  class="showSingle" target="7">WWWDOT</a></div>
+
+  <div class="filterDiv editorial 2019"><a  class="showSingle" target="8">PHILLY2019</a></div>
+      
+  <div class="filterDiv digitali 2019"><a  class="showSingle" target="9">URBAN_OUTFITTERS</a></div>
+      
+  <div class="filterDiv digitali 3d 2019"><a  class="showSingle" target="10">OUR_VOICES_WILL_BE_HEARD</a></div>
+      
+  <div class="filterDiv physicali 2019"><a  class="showSingle" target="11">DARK_ARTS</a></div>
+      
+       
+</div>
+    
+    </div>
+    </div>
+    
+    <div class="half-two">
+        
+     
+           <div class="mobile-header"> <p>HARRISON KRATZER</p> 
+    
+    <a class="btn zero mobile-button" href="mailto:harrck4@gmail.com"target="_blank">EMAIL</a>
+    
+     <a class="btn zero mobile-button" href="https://www.instagram.com/harrison.kratzer/"target="_blank">INSTA</a>
+    
+     <a class="btn zero mobile-button" href="https://www.linkedin.com/in/harrison-kratzer-6b79a2153/"target="_blank">LINKEDIN</a>
+    
+      <a class="btn zero mobile-button" href="https://workingnotworking.com/75757-harrison"target="_blank">WNW</a>
+    
+      <a class="btn zero mobile-button" href="https://drive.google.com/file/d/1bmOOLiRL8IvnvLYKAAgjBi8T8oUbNPva/view?usp=sharing"target="_blank">RESUME</a>
+               
+            
+       
+               <br>
+        
+        </div>
+        
+      <div id="div1" class="targetDiv  two-content">
+        
+          
+<p class="two-content-split-one">4D </p>
+          
+          
+        <p class="two-content-split-two">2020 </p>
+          
+             <p class="two-content-split-two">Packaging design and branding for 4D, a perfume line with an interest in the multi-sensory experience. The design of the packaging was strongly directed by the concept of illusory animation, created in this case by moire lines and a transparent sleeve. </p>
+          
+          <p class="two-content-split-one">Packaging, Branding, 3d, Motion</p>
+          
+          
+     <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/4d/4D_Tri_FullAnimation.mp4">
+</video>
+          
+          <img src="images/4d/4D_Still1-1.png" width="100%" height="auto">
+          
+          <img src="images/4d/4D_Still2.png" width="100%" height="auto">
+          
+          <img src="images/4d/4D_Still3.png" width="100%" height="auto">
+          
+            <img src="images/4d/4D_Still4-1.png" width="100%" height="auto">
+          
+            <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/4d/4D_Animation2_Compressed%20(1).mp4" type="video/mp4">
+</video>
+         
+          
+         
+        
+
+
+        </div>
+                  
+        <div id="div2" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">MONNNO </p>
+          
+          
+        <p class="two-content-split-two">2020 </p>
+          
+             <p class="two-content-split-two">MONNNO is a typographic experiment in form and space, seeking to render an efficient and beautiful 2D typeface in a physical 3D environment with certain restraints such as physics, dimension, and shape. The forms of each 2D letter are given by a singular "perfect" viewpoint of the 3D sculpture, as if the form itself is a snapshot of time amongst countless perspectives. </p>
+          
+          <p class="two-content-split-one">Typography, 3d, Motion</p>
+          
+            
+              <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/monnno/MONNNO_ConveyorBelt2_Compressed.mp4">
+</video>
+            
+            <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/monnno/MONNNO_M_Spin-2_Compressed.mp4">
+</video>
+    
+</div>
+        
+        
+        
+        
+        
+                
+            <div id="div3" class="targetDiv  two-content">
+                
+                <p class="two-content-split-one">Benedict </p>
+          
+          
+        <p class="two-content-split-two">2020 </p>
+          
+             <p class="two-content-split-two">Branding and photography for pop artist <a href="https://open.spotify.com/artist/7mj0wMl3SBSA1wwCs7pJP6"target="_blank">Benedict</a>.</p>
+          
+          <p class="two-content-split-one">Poster, Musician, Branding, Photo
+              
+              
+                </p>
+          
+                
+                
+         <img src="images/Benedict/BENEDICT_2_pink2.jpg" width="100%" height="auto">
+                
+              <img src="images/Benedict/logomockup.jpg" width="100%" height="auto"> 
+                
+                  <img src="images/Benedict/0000010.jpg" width="80%" height="auto">
+                
+         <img src="images/Benedict/BENEDICT_5.jpg" width="60%" height="auto">
+                
+       
+                
+        
+        
+        
+        
+        </div>
+        
+        <div id="div4" class="targetDiv  two-content">
+            
+             <p class="two-content-split-one">Pluck</p>
+          
+          
+        <p class="two-content-split-two">2020</p>
+          
+             <p class="two-content-split-two">Visualizer for pop artist <a href="https://open.spotify.com/artist/7mj0wMl3SBSA1wwCs7pJP6"target="_blank">Benedict</a>.</p>
+          
+          <p class="two-content-split-one">Motion</p>
+            
+           
+             <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/Pluck/PluckVisualizer_Square_24sec.mp4">
+</video>
+        
+        
+        
+        </div>
+        
+         <div id="div5" class="targetDiv  two-content">
+             
+             <p class="two-content-split-one">Maya </p>
+          
+          
+        <p class="two-content-split-two">2019</p>
+          
+             <p class="two-content-split-two">A political campaign of the future: a future of meticulous pandering, false promises, artificial design, and technological advancement for social manipulation. Maya, a CGI political movement, embodies the fallacies of our current/upcoming social and political climate. </p>
+          
+          <p class="two-content-split-one">Branding, 3d, Motion</p>
+             
+                <p class="two-content-split-one">Collaborators: <a href="https://ctownsend.me/"target="_blank">Christian Townsend</a>, <a href="https://iwolfdsgn.com/"target="_blank">Isabelle Wolf</a></p>
+        <img src="images/Maya/af96e996705289.5eb43ca18ba4c%20copy.jpg" width="100%" height="auto">
+                
+        <img src="images/Maya/mayairl5%20(1).jpg" width="100%" height="auto">
+                
+        <img src="images/Maya/mayasnapchat.png" width="100%" height="auto">   
+                
+        <img src="images/Maya/mayavloggif.gif" width="100%" height="auto">
+                
+        <img src="images/Maya/mayainsta.png" width="100%" height="auto">
+                
+        <img src="images/Maya/mayaposter2.png" width="100%" height="auto">   
+             
+             
+              <img src="images/Maya/0de9c796705289.5eb573f9d1300.png" width="100%" height="auto">
+             
+              <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/Maya/mayawebsiteee_web.mp4">
+</video>
+       
+        <img src="images/Maya/mayaposter2.png" width="100%" height="auto">   
+                     
+        <img src="images/Maya/mayafont.png" width="100%" height="auto"> 
+             
+              <img src="images/Maya/46d72c96705289.5eb573f9d1c18.png" width="100%" height="auto">   
+                     
+        <img src="images/Maya/mayairlmockup1.jpg" width="100%" height="auto"> 
+        
+        
+        </div>
+        
+        <div id="div6" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">Wolfstock </p>
+          
+          
+        <p class="two-content-split-two">2020 </p>
+          
+             <p class="two-content-split-two">Wolfstock is an annual music festival hosted by North Carolina State University every year for students to celebrate the end of the school year and the beginning of the summer.
+
+I was challenged to design an entire new brand for the event to match the excitement and intrigue it brought to students. The brand takes inspiration from the energetic imagery and emotive style of 70s punk bands.
+
+ </p>
+          
+          <p class="two-content-split-one">Branding, Motion</p>
+          
+        <img src="images/Wolfstock/wolfstockheader.png" width="100%" height="auto">
+                
+        <img src="images/Wolfstock/wolfstock2%20(1).png" width="100%" height="auto">
+                
+        <img src="images/Wolfstock/wolfstockposter1.png" width="60%" height="auto">   
+                
+             
+              <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/Wolfstock/wolfstockphysics--1-.mp4">
+</video>
+       
+        <img src="images/Wolfstock/wolfstockflag.jpg" width="60%" height="auto">   
+                     
+        <img src="images/Wolfstock/wlfstockmural%20(1).jpg" width="100%" height="auto"> 
+             
+              <img src="images/Wolfstock/wolfstockbag.jpg" width="100%" height="auto">   
+                     
+      <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/Wolfstock/wolfstockphone--Converted_web.mp4">
+</video>
+       
+        
+        
+        </div>
+        
+        
+        <div id="div7" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">WWWdot </p>
+          
+          
+        <p class="two-content-split-two">2019 </p>
+          
+             <p class="two-content-split-two">
+                WWWdot is a full fledged attempt at publication design and large-scale typographic systems. WWWdot was created by myself as a monthly documentation of the wonderful world we call the Internet. The publication became a physical embodiment of the various contextual juxtapositions between the internet and the physical page.
+
+ </p>
+          
+          <p class="two-content-split-one">Editorial</p>
+          
+             
+              <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/WWWdot/spread-gif_web.mp4">
+</video>
+       
+        <img src="images/WWWdot/IMG_9667-copy%20(1).jpg" width="60%" height="auto">   
+                     
+        <img src="images/WWWdot/thumbnail-11%20(1).png" width="100%" height="auto"> 
+             
+              <img src="images/WWWdot/thumbnail-13.png" width="100%" height="auto">   
+            
+            <img src="images/WWWdot/thumbnail-22.png" width="100%" height="auto"> 
+             
+              <img src="images/WWWdot/thumbnail-8.png" width="100%" height="auto">  
+                     
+    
+        </div>
+        
+       <div id="div8" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">Philly2019</p>
+          
+          
+        <p class="two-content-split-two">2019 </p>
+          
+             <p class="two-content-split-two">
+               A location based visual study of Philadelphia over the course of a summer. The environment quickly captured my imagination and inspired me to attempt to document my time through the lense of the Philly aesthetic. Contained in this zine is a conglomeration of all my design experiments , various photography explorations, and materiality studies throughout the summer.
+
+ </p>
+          
+          <p class="two-content-split-one">Editorial</p>
+          
+             
+       
+        <img src="images/Philly2019/zinegifff.gif" width="100%" height="auto">   
+                     
+        <img src="images/Philly2019/phillyzinemwebsitemockup-04%20(1)%20copy.png" width="100%" height="auto"> 
+           
+            <img src="images/Philly2019/woierdflskc.png" width="100%" height="auto"> 
+             
+              <img src="images/Philly2019/phillyzinemwebsitemockup-04%20(1).png" width="100%" height="auto">   
+            
+            <img src="images/Philly2019/phillyzinemwebsitemockup-05.png" width="100%" height="auto"> 
+             
+              <img src="images/Philly2019/phillyzinemwebsitemockup-08.png" width="100%" height="auto">  
+    
+        
+        
+        
+        </div>
+        
+        <div id="div9" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">Urban Outfitters</p>
+          
+          
+        <p class="two-content-split-two">2019 </p>
+          
+             <p class="two-content-split-two">
+              I participated in a summer long internship at Urban Outfitters within the UI team. I fully enveloped myself in the complicated world of developing various interaction designs manifesting in multiple mediums under the umbrella of a large corporation. Below is some random stuff I made during the internship.
+
+ </p>
+          
+          <p class="two-content-split-one">Digital Interactive</p>
+          
+            <p class="two-content-split-one">Collaborators: <a href="https://a-mcquiston.info/"target="_blank">Andrew McQuiston</a>, <a href="https://www.elenitrapp.com/"target="_blank">Eleni Trap</a>, <a href="https://www.alexmoncada.soy/"target="_blank">Alex Moncada</a>.</p>
+             
+       
+        <img src="images/UO/uowebsite1%20(2).jpg" width="100%" height="auto">   
+                     
+        <img src="images/UO/uowebsite2%20(1).jpg" width="100%" height="auto"> 
+           
+            <img src="images/UO/uowebsite3%20(1).png" width="100%" height="auto"> 
+             
+            <video width="100%" height="auto" loop muted autoplay>
+  <source src="images/UO/revideo.mp4">
+</video>
+
+        </div>
+        
+        <div id="div10" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">Our Voices Will be Heard</p>
+          
+          
+        <p class="two-content-split-two">2019 </p>
+          
+             <p class="two-content-split-two">
+             ‘Our Voices Will be Heard’ is an experimental multimedia experience hosted by faculty and students of NC State University. It was created in order to celebrate and tell the story of the women's suffrage movement.
+
+The experience consists of a live orchestra playing a custom piece and a series of virtual reality experiences playing during the music. Audience members are encouraged to use their own devices to experience the visuals in tandem to listening to the live music. I was challenged to design a portion of the 360 visuals to go into the show. 
+
+ </p>
+          
+          <p class="two-content-split-one">Digital Interactive</p>
+          
+    
+        
+        
+            
+            
+
+        
+        <img src="images/OurVoices/giphy-1-1.gif" width="100%" height="auto">  
+        
+        <img src="images/OurVoices/a235db22-cde4-4c28-98a7-e4320f97e3a3_rw_1200-1%20(1).png" width="100%" height="auto">  
+        
+         <img src="images/OurVoices/826f64b6-cff2-4683-8b2d-b8c3d0385726_rw_1200-1.png" width="100%" height="auto">  
+        
+    
+
+            </div>
+        
+        <div id="div11" class="targetDiv  two-content">
+            
+            <p class="two-content-split-one">Dark Arts</p>
+          
+          
+        <p class="two-content-split-two">2019 </p>
+          
+             <p class="two-content-split-two">
+             “Dark Arts” is an interactive exhibition I directed for the Fish Market Student Gallery at NC State University. We covered the gallery with paper. We gave people markers and headlamps at the door. It was a blast
+</p>
+          
+          <p class="two-content-split-one">Physical Interactive</p>
+        
+        
+        <img src="images/DarkArts/Dark-Arts-Gif-1.gif" width="100%" height="auto">  
+        
+      
+        
+         <img src="images/DarkArts/giphy-7-1.gif" width="40%" height="auto">  
+            
+             <img src="images/DarkArts/IMG_5242-1.jpg" width="100%" height="auto">  
+            
+             <img src="images/DarkArts/MVIMG_20191005_124429.jpg" width="100%" height="auto">  
+            
+              <img src="images/DarkArts/giphy-10-1.gif" width="100%" height="auto">  
+        
+        
+        
+        
+                    </div>
+        
+        
+
+
+            </div>
+
+    
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

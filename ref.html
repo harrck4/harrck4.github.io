@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+.half-one{
+width: 50vw;
+height: 100vh;
+background-color: red;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        position: fixed;
+}
+    
+        
+.half-two{
+width: 50vw;
+height: 400vh;
+background-color: blue;
+        margin-left: 50vw;
+       
+        position: relative;
+}
+        
+ .two-content {
+            height: 40vw;
+     width: 40vw;
+     background-color: turquoise;
+     position: relative;
+     margin: 0 auto;
+     padding 20px;
+     margin-bottom: 30px;
+        }
+        
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+        
+        
+        
+        #header { position:relative; top:0; left:0; right:0; height:4.0625em; background:#222 }
+#header img { position:absolute; top:0.5em; left:1em; width:3em; height:3em; border:0 }
+#header > span { position:absolute; top:1.175em; left:5em; color:#fff }
+#header span + a { position:absolute; top:0.65em; right:0.5em; color:#fff; text-decoration:none }
+#header a span { font-size:1.5em }
+.page-content { padding:0 1em 1em; max-width:64em; margin:auto }
+.breadcrumbs { font-size:.75em; border-bottom:7px solid #eee; margin:0 -1.25em 1.5em; padding:1em 1.25em }
+.breadcrumbs span { display:none }
+@media(min-width:30em) { .breadcrumbs { line-height:3.75; padding:0 1.25em } }
+@media(min-width:60em) { .breadcrumbs span { display:inline-block } }
+a, a:active, a:visited { color:#c30 }
+a:visited { color:#c90 }
+a:hover, a:focus { color:#666; text-decoration:none }
+code { display:block; background:#ebebeb; font-size:0.875em; padding:1em 2em; overflow-x:scroll; white-space:nowrap }
+blockquote { font-style:italic; margin:0 5% }
+
+
+.filter-categories span { display:inline-block; padding:0.25em 0; white-space:nowrap }
+
+.filter-wrap { display:-webkit-flexbox; display:-ms-flexbox; display:flex; flex-wrap:wrap; position:relative; overflow:hidden; margin:1.5em -0.75% 2em; font-size:0.9375em }
+.filter-item { display:-webkit-flexbox; display:-ms-flexbox; display:flex; flex-direction:column; width:46.5%; padding:2% 1%; margin:0.75vw 0.75%; text-align:center; background:#333; color:#fff }
+.filter-item span { display:block; text-align:right; font-size:0.875em; color:#ccc; padding-right:5% }
+.filter-item b { display:block; font-size:0.9375em; margin:1em 0 0.5em }
+.filter-item b:before, .filter-item b:after { content:'~'; font-weight:normal }
+.filter-item p { font-size:0.75em; color:#ccc; -webkit-flex:1 0 auto; -ms-flex:1 0 auto; flex:1 0 auto }
+.filter-item i { font-size:0.9375em; font-weight:bold; margin-top:0.25em; }
+.filter-item ul { list-style-type:none; margin-left:0; margin-top:2em; padding:0; font-size:0.75em; color:#000 }
+.filter-item li { display:inline-block; line-height:2; padding:0 2%; border-radius:0.25em }
+
+
+.filtered-inclusive .filter-item, .filtered-exclusive .filter-item, .filter-no-item { display:none } /* filtered-inclusive/filtered-exclusive class applied via js */
+.filtered-inclusive .filter-item.selected, .filtered-exclusive .filter-item:not(.selected) { display:-webkit-flexbox; display:-ms-flexbox; display:flex } /* selected class applied via js */ 
+.filter-no-item.filter-no-item-active { display:block;}
+.filter-mask-active { position:absolute; top:0; left:0; bottom:0; right:0; -webkit-animation:filterMask 1s ease-in-out both; animation:filterMask 1s ease-in-out both }
+@-webkit-keyframes filterMask { 
+	0% { background:transparent } 
+	50% { background:#fff } 
+	100% { background:transparent } 
+	}
+@keyframes filterMask { 
+	0% { background:transparent } 
+	50% { background:#fff } 
+	100% { background:transparent } 
+	}
+
+@media(min-width:40em) { 
+	.filter-text, .filter-label, .filter-wrap { font-size:0.875em }
+	.filter-item { width:29.75% }
+	}
+
+@media(min-width:56em) { 
+	.filter-text, .filter-label, .filter-wrap { font-size:1em } 
+	.filter-item { width:21.5% }
+	}
+
+@media(min-width:64em) {
+	.filter-item { margin:0.5em 0.75% }
+	}
+        
+    div label input {
+   margin-right:100px;
+}   
+        
+#ck-button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#ck-button label {
+    float:left;
+    width:4.0em;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#911;
+    color:#fff;
+}
+        
+        
+    </style>
+
+    
+    <script src="jquery-3.5.1.min.js"></script>
+ <script src="main.js"></script>
+    
+</head>
+
+
+<body>
+    <div class="half-one">
+        
+
+<div id="demo1">
+<br><br>
+<span class="filter-categories">
+	<span class="filter-text">Filter:</span> 
+	<div id="ck-button">
+    <span><input type="checkbox" id="filter-all-1" class="filter-input filter-all" name="filter-1" checked /><label for="filter-all-1" class="filter-label">All</label></span> 
+    </div>
+    <span><input type="checkbox" id="Bra-1" class="filter-input" name="filter-1" /><label for="starter-1" class="filter-label">Branding</label></span> 
+	
+    <span><input type="checkbox" id="Exp-1" class="filter-input" name="filter-1" /><label for="main-1" class="filter-label">Experimental</label></span> 
+	
+    <span><input type="checkbox" id="Three-1" class="filter-input" name="filter-1" /><label for="mild-1" class="filter-label info-mild">3D</label></span> 
+	
+    <span><input type="checkbox" id="Type-1" class="filter-input" name="filter-1" /><label for="med-1" class="filter-label info-med">Typography</label></span>
+</span>
+
+<div class="filter-wrap">
+	<div class="filter-item starter-1 Bra-1 Type-1">
+		<span>A</span>
+	</div>
+	<div class="filter-item starter-1 Three-1 Bra-1">
+		<span>B</span>
+	</div>
+	<div class="filter-item starter-1 Three-1 Exp-1">
+		<span>C</span>
+	</div>
+	<div class="filter-item starter-1 Type-1 Exp-1 Bra-1 Three-1">
+		<span>D</span>
+	</div>
+	<div class="filter-no-item">Sorry, no items match your filter selection(s).</div>
+	<div class="filter-mask"></div> <!-- mask is last -->
+</div>
+</div>
+
+        
+    </div>
+    
+    <div class="half-two">
+    <div class="two-content">hi</div>
+        <div class="two-content">hi</div>
+        <div class="two-content">hi</div>
+        <div class="two-content">hi</div>
+        <div class="two-content">hi</div>
+    </div>
+    
+    
+<script>
+function addClassAll(el, cls){
+	for (var i = 0; i < el.length; ++i){
+		if (!el[i].className.match('(?:^|\\s)'+cls+'(?!\\S)')){ el[i].className += ' '+cls; } 
+		}
+	}
+function delClassAll(el, cls){
+	for (var i = 0; i < el.length; ++i){
+		el[i].className = el[i].className.replace(new RegExp('(?:^|\\s)'+cls+'(?!\\S)'),'');
+		}
+	}
+
+function contentFilter(filterID, filterType){  
+	var id = filterID;
+	document.querySelector(id+' .filter-categories').onclick = function(evt) { 
+		evt = evt || window.event;
+		var elem = evt.target || evt.srcElement, 
+		    wrap = document.querySelectorAll(id+' .filter-wrap'),
+		    items = document.querySelectorAll(id+' .filter-item'),
+		    inputs = document.querySelectorAll(id+' .filter-input'),
+		    filters = [],
+		    noitem = document.querySelectorAll(id+' .filter-no-item'), 
+		    mask = document.querySelectorAll(id+' .filter-mask'), 
+		    type = filterType;
+		addClassAll(mask, 'filter-mask-active');
+		setTimeout(function() { delClassAll(mask, 'filter-mask-active'); }, 1000); 
+		if (elem.className.match('(?:^|\\s)filter-all(?!\\S)')) { // #filter-all
+			for (var i = 1; i < inputs.length; ++i) { // loop through inputs but ignore [0] - #filter-all
+				inputs[i].checked = false; // uncheck all other inputs
+				}
+			setTimeout(function() { 
+				delClassAll(items, 'selected');  
+				delClassAll(wrap, 'filtered-'+type); 
+				delClassAll(noitem, 'filter-no-item-active'); 
+				}, 500); 
+			} else { // another filter is checked
+			inputs[0].checked = false; // uncheck #filter-all
+			for (var i = 1; i < inputs.length; ++i) { // loop through inputs but ignore [0] - #filter-all
+				if (inputs[i].checked) { filters.push(inputs[i].id); } // add checked inputs to filters array 
+				}
+			setTimeout(function() { 
+				delClassAll(items, 'selected'); 
+				addClassAll(wrap, 'filtered-'+type);  
+				if (type == 'exclusive') {
+					for (var i = 0; i < filters.length; ++i) {
+						addClassAll(document.querySelectorAll(id+' .filter-item.'+filters[i]), 'selected'); 
+						}
+					document.querySelectorAll(id+' .selected').length == items.length ? addClassAll(noitem, 'filter-no-item-active') : delClassAll(noitem, 'filter-no-item-active'); 
+				} else if (type == 'inclusive') {
+					if (filters.length > 0) {addClassAll(document.querySelectorAll(id+' .filter-item.'+filters.join('.')), 'selected');} // build css selector from filters array
+					document.querySelectorAll(id+' .selected').length == 0 ? addClassAll(noitem, 'filter-no-item-active') : delClassAll(noitem, 'filter-no-item-active'); 
+					} 
+				var checkCount = 0;  
+				for (var i = 0; i < inputs.length; ++i) {
+					checkCount += inputs[i].checked ? 1 : 0; 
+					}
+				if (checkCount == 0) {inputs[0].checked = true;}
+				if (inputs[0].checked) {
+					delClassAll(wrap, 'filtered-'+type);
+					delClassAll(noitem, 'filter-no-item-active');
+					}
+				}, 500); 
+			}
+		}
+	}
+
+contentFilter('#demo1', 'inclusive'); // demo 1 init - params: unique wrapper id, filter type (inclusive/exclusive)
+contentFilter('#demo2', 'exclusive'); // demo 2 init - params: unique wrapper id, filter type (inclusive/exclusive)
+
+</script> 
+<!--<![endif]-->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+/*  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); */
+  })(window,document,'script','//fofwebdesign.co.uk/template/scripts/ga.php','ga');
+  ga('create', 'UA-33863475-1', 'fofwebdesign.co.uk');
+  ga('send', 'pageview');
+</script>
+
+    
+    
+</body>
+
+</html>
