@@ -55,7 +55,7 @@ sup
 
 /* Style the buttons */
 .btn {
-    font-family: Authentic1;
+    font-family: 'Authentic1';
     font-size: 1.1vw;
      line-height: 1.3vw;
     padding: 0;
@@ -176,7 +176,7 @@ position: fixed;
     
         
 .half-two{
-width: 55vw;
+width: 50vw;
 height: 100vh;
 background-color: white;
     margin-right:6px;
@@ -184,6 +184,7 @@ position: absolute;
 top:0px;
     right:0px;
     padding-top: 10px;
+    overflow:scroll;
 }
         
  .two-content {
